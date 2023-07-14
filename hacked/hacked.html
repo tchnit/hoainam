@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style> @-moz-keyframes roll { 100% { -moz-transform: rotate(360deg); } } @-o-keyframes roll { 100% { -o-transform: rotate(360deg); } } @-webkit-keyframes roll { 100% { -webkit-transform: rotate(1080deg); } } body{ -moz-animation-name: roll; -moz-animation-duration: 4s; -moz-animation-iteration-count: 1; -o-animation-name: roll; -o-animation-duration: 4s; -o-animation-iteration-count: 1; -webkit-animation-name: roll; -webkit-animation-duration: 4s; -webkit-animation-iteration-count: 1; } </style>
+
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur862.ani), url(http://cur.cursors-4u.net/cursors/cur-9/cur862.png), progress !important;}</style>
+
+<style type="text/css">BODY { background-image:url('https://media.giphy.com/media/IzLAivcksCmxq/giphy.gif?response_id=591d09a8c36fbf749c4d2331'); </style>
+  <style>
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+    #color-changing-text {
+      font-size: 200px;
+      text-align: center;
+      animation: colorChange 2s infinite;
+    }
+
+    @keyframes colorChange {
+      0% { color: red; }
+      25% { color: blue; }
+      50% { color: green; }
+      75% { color: purple; }
+      100% { color: orange; }
+    }
+  </style>
+</head>
+<body>
+  <div id="color-changing-text">HACKED</div>
+
+  <script>
+    // JavaScript để tạo hiệu ứng chuyển đổi màu liên tục
+    var textElement = document.getElementById('color-changing-text');
+    var colors = ['red', 'blue', 'green', 'purple', 'orange'];
+    var colorIndex = 0;
+
+    setInterval(function() {
+      textElement.style.color = colors[colorIndex];
+      colorIndex = (colorIndex + 1) % colors.length;
+    }, 2000);
+  </script>
+</body>
+</html>
